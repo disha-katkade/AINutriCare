@@ -23,6 +23,7 @@ import pandas as pd
 from google import genai
 from google.genai import types
 
+
 # =========================
 # 0. CONFIG
 # =========================
@@ -31,7 +32,7 @@ MODEL_PATH = r"E:\Projects\ainutricare-ui\models\attention_lstm.h5"
 SCALER_PATH = r"E:\Projects\ainutricare-ui\data\X_final.npy"
 FOOD_KB_FILE = "diet_kb.json"
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAvR66hVDzuEjwuJGM-4GhY3tQiUDOUGHY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyDwDRtJarlm4IsJ-7Xgd0zMAMEiGbxBEOQ")
 GEMINI_MODEL_ID = "gemini-2.5-flash-lite"
 
 # Tesseract path
