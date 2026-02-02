@@ -28,8 +28,14 @@ from google.genai import types
 # 0. CONFIG
 # =========================
 # Paths (update to match your setup)
-MODEL_PATH = r"E:\Projects\ainutricare-ui\models\attention_lstm.h5"
-SCALER_PATH = r"E:\Projects\ainutricare-ui\data\X_final.npy"
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "attention_lstm.h5")
+SCALER_PATH = os.path.join(BASE_DIR, "data", "X_final.npy")
+
+# MODEL_PATH = r"E:\Projects\ainutricare-ui\models\attention_lstm.h5"
+# SCALER_PATH = r"E:\Projects\ainutricare-ui\data\X_final.npy"
 FOOD_KB_FILE = "diet_kb.json"
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyDwDRtJarlm4IsJ-7Xgd0zMAMEiGbxBEOQ")
